@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site de Delivery</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>GT Deliverys</h1>
+		<nav>
+			<button class="tab-button active" onclick="openTab('home')">Início</button>
+			<button class="tab-button" onclick="openTab('restaurants')">Restaurantes</button>
+			<button class="tab-button" onclick="openTab('cart')">Carrinho</button>
+			<button class="tab-button" onclick="openTab('profile')">Perfil</button>
+		</nav>
+	</header>
+	<main>
+		<div id="home" class="tab-content active">
+			<h2>Bem-vindo! GT Deliverys</h2>
+			<p>"Seu prato favorito está a poucos passos de distância. Navegue, escolha e receba a melhor comida sem sair de casa."</p>
+		</div>
+		<div id="restaurants" class="tab-content">
+			<h2>Restaurantes</h2>
+			<div class="restaurant">
+				<h3>Restaurante A</h3>
+				<p>Descrição do Restaurante A.</p>
+				<button onclick="openTab('menu')">Ver Menu</button>
+			</div>
+			<div class="restaurant">
+				<h3>Restaurante B</h3>
+				<p>Descrição do Restaurante B.</p>
+				<button onclick="openTab('menu')">Ver Menu</button>
+			</div>
+		</div>
+		<div id="menu" class="tab-content">
+			<h2>Menu</h2>
+			<div class="menu-item">
+				<h3>Item 1</h3>
+				<p>Descrição do Item 1.</p>
+				<button onclick="addToCart('Item 1')">Adicionar ao Carrinho</button>
+			</div>
+			<div class="menu-item">
+				<h3>Item 2</h3>
+				<p>Descrição do Item 2.</p>
+				<button onclick="addToCart('Item 2')">Adicionar ao Carrinho</button>
+			</div>
+		</div>
+		<div id="cart" class="tab-content">
+			<h2>Carrinho</h2>
+			<ul id="cart-items">
+				<!-- Itens do carrinho serão adicionados aqui -->
+			</ul>
+		</div>
+		<div id="profile" class="tab-content">
+			<h2>Perfil</h2>
+			<p>Gerencie suas informações pessoais.</p>
+		</div>
+	</main>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Produtos</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>-Cardapio-</h1>
+	</header>
+	<main>
+
+
+		<div class="product-container">
+			<div class="product">
+				<img src="https://folhadomate.com/wp-content/uploads/2016/09/48388-receita-de-pizza-portuguesa-1.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 608px; height: 230px; margin: 0px; width: 368px;" alt="Receita: como preparar a verdadeira pizza portuguesa" jsname="kn3ccd" aria-hidden="false">
+				<h2>Produto 1</h2>
+				<p>Descrição breve do produto 1. Este é um produto incrível que você vai adorar.</p>
+				<p class="price">R$ 29,90</p>
+				<button onclick="addToCart('Produto 1')">Adicionar ao Carrinho</button>
+			</div>
+	
+
+			<div class="product">
+		<img src="https://www.designi.com.br/images/preview/10072903.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1080px; height: 246px; margin: 0px; width: 368px;" alt="Pizza De Calabresa 1 Imagem JPG [download] - Designi" jsname="kn3ccd" aria-hidden="false">
+				<h2>Pizza de calabresa</h2>
+				<p>Descrição breve do produto 2. Mais uma ótima opção para você.</p>
+				<p class="price">R$ 49,90</p>
+				<button onclick="addToCart('Produto 2')">Adicionar ao Carrinho</button>
+			</div>
+
+			<div class="product-container">
+				<div class="product">
+					<img src="https://i.pinimg.com/originals/6b/16/c6/6b16c64e378240f274f7760488983e60.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 956px; height: 157px; margin: 0px; width: 300px;" alt="Receita De Pizza Gourmet De Frango Com Catupiry: Veja Como Fazer!" jsname="kn3ccd" aria-hidden="false">
+					<h2>Produto 1</h2>
+					<p>Descrição breve do produto 1. Este é um produto incrível que você vai adorar.</p>
+					<p class="price">R$ 29,90</p>
+					<button onclick="addToCart('Produto 1')">Adicionar ao Carrinho</button>
+				</div>
+
+		<body>
+			<header>
+				<h1>bebidas</h1>
+			</header>
+			<main>
+
+				<div class="product-container">
+					<div class="product">
+						<img src="https://i.pinimg.com/236x/f7/67/75/f7677568ce008c45b44355a44ec1ef5f.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 236px; height: 157px; margin: 0px; width: 88px;" alt="9 ideias de Wallpapers de marcas de Refrigerante | produtos da coca cola,  papeis de parede, papel de parede wallpaper" jsname="kn3ccd" aria-hidden="false">
+						<h2>Produto 1</h2>
+						<p>Descrição breve do produto 1. Este é um produto incrível que você vai adorar.</p>
+						<p class="price">R$ 29,90</p>
+						<button onclick="addToCart('Produto 1')">Adicionar ao Carrinho</button>
+					</div>
+
+				<div class="product-container">
+					<div class="product">
+						<img src="https://i.pinimg.com/originals/c6/59/a1/c659a1e7429ea1888ca83451a6cfa23e.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 750px; height: 157px; margin: 0px; width: 88px;" alt="Products/Coca Cola (750x1334) Wallpaper ID: 560370 - Mobile Abyss" jsname="kn3ccd" aria-hidden="false">
+						<h2>Produto 1</h2>
+						<p>Descrição breve do produto 1. Este é um produto incrível que você vai adorar.</p>
+						<p class="price">R$ 29,90</p>
+						<button onclick="addToCart('Produto 1')">Adicionar ao Carrinho</button>
+					</div>
+
+				<div class="product-container">
+					<div class="product">
+						<img src="https://via.placeholder.com/150" alt="Produto 1">
+						<h2>Produto 1</h2>
+						<p>Descrição breve do produto 1. Este é um produto incrível que você vai adorar.</p>
+						<p class="price">R$ 29,90</p>
+						<button onclick="addToCart('Produto 1')">Adicionar ao Carrinho</button>
+					</div>
+
+			<!-- Adicione mais produtos conforme necessário -->
+		</div>
+	</main>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
